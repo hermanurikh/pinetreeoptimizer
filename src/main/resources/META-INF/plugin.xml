@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.qbutton.pinetreeoptimizer</id>
+    <name>Pine-Tree Code Optimizer</name>
+    <vendor email="herman.urikh@aengel.com">German Urikh</vendor>
+
+    <description><![CDATA[
+    A plugin to optimize fields layout, sorting then in pine-tree order (by line length).
+
+    ]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <idea-version since-build="182.0"/>
+
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="1" class="com.qbutton.pinetreeoptimizer.FieldsOptimizer" text="Pinetreefize fields"
+                description="An action to optimize fields layout.">
+            <add-to-group group-id="CodeMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift BACK_QUOTE"/>
+        </action>
+    </actions>
+</idea-plugin>
