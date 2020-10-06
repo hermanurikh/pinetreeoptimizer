@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.qbutton'
-version '1.0.2'
+version '1.0.3'
 
 apply plugin: 'java'
 
@@ -18,21 +18,12 @@ dependencies {
 }
 
 intellij {
-    version '2018.2.1'
+    plugins 'java'
+    version '2020.2.2'
+
 }
 patchPluginXml {
     changeNotes """
-      <ul>
-          <li>Support for multiple classes in one file added.</li>
-          <li>Fields are now sorted alphabetically if they have the same length.</li>
-          <li>Minor bug with action button being enabled in some cases where there is no class fixed.</li>
-      </ul>
-      <br>
-      Upcoming changes: 
-      <br>
-      <ul>
-          <li>add support for sort direction</li>
-          <li>add support for constructor sorting</li>
-          <li>ignore comments while calculating field length</li>
-      </ul>"""
+        Added support for 2020.2+ versions.
+      """
 }

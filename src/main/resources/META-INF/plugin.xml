@@ -12,8 +12,9 @@
         <!-- Add your extensions here -->
     </extensions>
 
-    <idea-version since-build="182.0"/>
+    <idea-version since-build="191.0"/>
 
+    <depends>com.intellij.modules.java</depends>
 
     <actions>
         <!-- Add your actions here -->
